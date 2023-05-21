@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="25.0" layoutY="15.0" prefHeight="538.0" prefWidth="350.0" style="-fx-background-color: eeeeee; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lb_OS1" text="Đường dẫn máy chủ ESXi:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_ESXi" layoutY="35.0" prefHeight="30.0" prefWidth="350.0" text="192.168.178.108">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS11" layoutY="70.0" text="Tên tài khoản:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutY="105.0" prefHeight="30.0" prefWidth="165.0" text="root">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS111" layoutY="140.0" text="Mật khẩu:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_password" accessibleRole="PASSWORD_FIELD" layoutY="175.0" prefHeight="30.0" prefWidth="165.0" text="diem10qtm!">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS11111" layoutY="210.0" text="Datastore:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_datastore" layoutY="245.0" prefHeight="30.0" prefWidth="165.0" text="datastore1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS111111" layoutY="280.0" text="Tên máy ảo:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_VMname" layoutY="315.0" prefHeight="30.0" prefWidth="165.0" text="U2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS" layoutY="361.0" text="Hệ điều hành:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" layoutY="396.0" text="Đường dẫn OVFTool:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_OVF" editable="false" layoutX="1.0" layoutY="431.0" prefHeight="30.0" prefWidth="248.0" text="D:\Prog\OVFTool">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_OVF" layoutX="268.0" layoutY="431.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Chọn...">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="radio_Win" layoutX="130.0" layoutY="366.0" mnemonicParsing="false" text="Windows 10">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio_Ubun" layoutX="249.0" layoutY="365.0" mnemonicParsing="false" text="Ubuntu">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="btn_ok" layoutY="483.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" style="-fx-background-radius: 10;" text="Tạo máy ảo">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="lb_OS112" layoutX="186.0" layoutY="140.0" text="CPU:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_numCPU" disable="true" layoutX="186.0" layoutY="175.0" prefHeight="30.0" prefWidth="165.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS1111" layoutX="186.0" layoutY="210.0" text="RAM (MB):">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_memory" disable="true" layoutX="186.0" layoutY="245.0" prefHeight="30.0" prefWidth="165.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lb_OS111112" layoutX="186.0" layoutY="280.0" text="Bộ nhớ lưu trữ (GB):">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_storage" disable="true" layoutX="186.0" layoutY="315.0" prefHeight="30.0" prefWidth="165.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_checkHost" layoutX="309.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" text="→">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="lb_OS113" layoutX="186.0" layoutY="70.0" text="Kiểm tra Host">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_hostStatus" layoutX="187.0" layoutY="107.0" prefHeight="27.0" prefWidth="164.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="lb_status" layoutX="25.0" layoutY="562.0" prefHeight="27.0" prefWidth="350.0" visible="false">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
